@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Teko');
+	@import url('https://fonts.googleapis.com/css?family=Pacifico');
+		
+		body{			
+			margin: 0px;
+			overflow-x: hidden;
+		}
+
+		.menu-container{
+			display: block;
+			width: 100%;
+			height: 45px;
+			border-bottom:3px solid #27aee8; 
+			padding-left: 35px;
+			background-color: #810038;
+		}
+
+		.menu-container a{
+			text-decoration: none;
+			color: #ff9900;
+			font-size: 30px;
+			margin: 0px 10px 0px 0px;
+			font-family: 'Teko', sans-serif;
+		}
+
+		.menu-container a:hover{
+			color: #27aee8;
+			transition:all 0.4s;
+		}
+
+		.marca{
+			font-family: 'Pacifico', cursive;
+			color: #ff6600;
+		}
+
+		span#h4{
+			display: block;
+			margin-top: -50px;
+			margin-top: 0;
+		}
+
+		.articles{
+			border:1px solid #000;
+			position: relative;
+			top: 370px;
+			height: 550px;
+			width: 100vw;
+		}
+
+		#article-blocks{
+
+		}
+
+		.article-blocks{
+			position: relative;
+			border:1px solid #000;
+			width: 270px;
+			height: 180px;
+			padding-right: 0px;
+			transition: all 0.3s;
+		}
+
+		#frontend{
+			display: block;
+			position: absolute;
+			margin: 20px;
+		}
+
+		#frontimg{
+			display: block;
+			max-width:100%;
+			background-position: center;
+			transition: all 0.3s;
+		}
+
+		#dataimg{
+			display: block;
+			max-width:100%;
+			background-position: center;
+			transition: all 0.3s;
+		}
+
+		#database{
+			display: block;
+			position: relative;
+			margin: 20px;
+			left: 450px;
+		}
+
+
+		#database:hover{
+			-webkit-transform:scale(1.1);
+			-webkit-transition:0.3s;			
+		}
+
+		#frontend:hover{
+			-webkit-transform:scale(1.1);
+			-webkit-transition:0.3s;
+		}
+
+		.text-block figcaption{
+			z-index: 1;
+			font-weight: bold;
+			text-align: center;
+			font-size: 18px;
+			position: relative;
+			margin-top: 0px;
+			margin-left: 10px;
+		}
