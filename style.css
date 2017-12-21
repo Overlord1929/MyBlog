@@ -41,8 +41,8 @@
 
 		.articles{
 			border:1px solid #000;
-			position: relative;
-			top: 370px;
+			position: absolute;
+			top: 450px;
 			height: 550px;
 			width: 100vw;
 		}
@@ -84,7 +84,7 @@
 			display: block;
 			position: relative;
 			margin: 20px;
-			left: 450px;
+			left: 290px;
 		}
 
 
@@ -109,11 +109,10 @@
 		}
 
 .greetings{
-	position: absolute;
+	display: block;
+	position: relative;
+	text-align: center;
 	font-family: 'Antic Slab', serif;
-	margin-left: 0px;
-	border-bottom: 1px solid rgba(0,0,0,.4);
-	padding-left: 23px;
 }
 
 
@@ -126,5 +125,4 @@ h2{
 h4, h3{
 	font-size: 25px;
 	color: rgba(0,0,0,.7);
-	margin-bottom:18px;
 }
