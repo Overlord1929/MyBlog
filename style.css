@@ -4,6 +4,7 @@
 		body{			
 			margin: 0px;
 			overflow-x: hidden;
+			overflow-y: hidden;
 		}
 
 		.menu-container{
@@ -46,8 +47,8 @@
 			width: 100vw;
 		}
 
-		#article-blocks{
-
+		#homepage{
+			color: #00f;
 		}
 
 		.article-blocks{
@@ -59,24 +60,23 @@
 			transition: all 0.3s;
 		}
 
+		.img-blocks{
+			display: block;
+			max-width:100%;
+			background-position: center;
+			transition: all 0.3s;
+		}
+
 		#frontend{
 			display: block;
-			position: absolute;
+			position: relative;
 			margin: 20px;
+			margin-left: 75px;
 		}
 
-		#frontimg{
-			display: block;
-			max-width:100%;
-			background-position: center;
-			transition: all 0.3s;
-		}
-
-		#dataimg{
-			display: block;
-			max-width:100%;
-			background-position: center;
-			transition: all 0.3s;
+		#frontend:hover{
+			-webkit-transform:scale(1.1);
+			-webkit-transition:0.3s;
 		}
 
 		#database{
@@ -84,17 +84,47 @@
 			position: relative;
 			margin: 20px;
 			left: 290px;
+			top: -202px;
+			margin-left: 75px;
 		}
-
 
 		#database:hover{
 			-webkit-transform:scale(1.1);
 			-webkit-transition:0.3s;			
 		}
 
-		#frontend:hover{
+		#programming{
+			display: block;
+			position: relative;
+			margin: 20px;
+			left: 580px;
+			top: -404px;
+			margin-left: 75px;
+		}
+		
+		#programming:hover{
 			-webkit-transform:scale(1.1);
 			-webkit-transition:0.3s;
+		}
+
+		#eletronic{
+			display: block;
+			position: relative;
+			margin: 20px;
+			top: -606px;
+			left: 870px;
+			margin-left: 75px;
+		}
+
+		#eletronic:hover{
+			-webkit-transform:scale(1.1);
+			-webkit-transition:0.3s;
+		}
+
+		#eletronic figcaption{
+			margin-top: 5px;
+			font-size: 17px;
+			margin-left: 0px;
 		}
 
 		.text-block figcaption{
@@ -124,4 +154,9 @@ h2{
 h4, h3{
 	font-size: 25px;
 	color: rgba(0,0,0,.7);
+}
+
+div a{
+	color: #000;
+	text-decoration: none;
 }
