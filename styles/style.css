@@ -142,6 +142,7 @@
 	position: relative;
 	text-align: center;
 	font-family: 'Antic Slab', serif;
+	left: 150px;
 }
 
 
@@ -159,4 +160,9 @@ h4, h3{
 div a{
 	color: #000;
 	text-decoration: none;
+}
+
+#lelou{
+	position: absolute; 
+	top: 120px;
 }
