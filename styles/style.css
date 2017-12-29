@@ -3,8 +3,6 @@
 			
 			body{			
 				margin: 0px;
-				overflow-x: hidden;
-				overflow-y: hidden;
 			}
 
 			.menu-container{
@@ -286,7 +284,7 @@
 
 /*------------------ PORTFOLIO.HTML-------------------------*/
 
-#portfolio-text{
+#page-text{
 	text-align: center;
 	color: #ff9900;
 	font-size: 42px;
@@ -294,12 +292,12 @@
 	transition:all 0.4s;
 }
 
-#portfolio-text:hover{
+#page-text:hover{
 	color: #27aee8;
 	transition:all 0.4s;
 }
 
-.portfolio-block{
+.iten-block{
 	display: block;
 	width: 1000px;
 	height: 300px;
@@ -315,3 +313,5 @@
 	border: 1px solid rgba(0,0,0,0.4);
 	box-shadow: 3px 3px 3px rgba(0,0,0,.3);
 }
+
+/*------------------TOPICS.HTML--------------------*/
