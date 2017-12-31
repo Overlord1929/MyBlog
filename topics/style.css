@@ -124,6 +124,8 @@ a.side-menu-iten{
                  0px -1px 0px #1D91B8;
     margin-left: 770px;
     margin-top: 16px;
+    transition: all 0.3s;
+    opacity: 0;
 }
 
 #minilogospan{
@@ -138,5 +140,9 @@ a.side-menu-iten{
                  0px -1px 0px #000;
     margin-top: 10px;
     margin-left: -30px;
+    transition: all 0.3s;
 }
+
+
+
 
