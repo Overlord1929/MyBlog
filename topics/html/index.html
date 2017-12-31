@@ -3,20 +3,40 @@
 <head>
 	<title>HTML - Topic</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script type="text/javascript" src="../jquery.js"></script>
 </head>
 <body>
 
-	<h1 class="logo">HTML&nbsp;<span class="space">space</span></h1>
+	<script type="text/javascript">
+		$(function(){   
+			var nav = $('#menu-containerhtml');   
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 179) { 
+					nav.addClass("menuFixo"); 
+				} else { 
+					nav.removeClass("menuFixo"); 
+				} 
+			});  
+		});
+	</script>
+
+	<div class="background-menu" id="background-menuhtml">
+	<h1 class="logo" id="logohtml">HTML&nbsp;<span class="space" id="spacehtml">space</span></h1>
 	<p class="side-msg"></p>
 
-	<header class="header-menu">
-		<a href=""><div class="menu-iten">Frameworks</div></a>
-		<a href=""><div class="menu-iten">Recursos</div></a>	
-		<a href=""><div class="menu-iten">Múltimídia e extras</div></a> 
-		<!--links úteis, pessoas a se acompanhar-->
-		<a href=""><div class="side-menu-iten">MyBlog</div></a>
-		<a href=""><div class="side-menu-iten">JD Project</div></a>
-	</header>
+	<div class="menu-container" id="menu-containerhtml">
+		<header class="header-menu">
+			<p id="minilogo">html<span id="minilogospan">space</span></p>
+			<a class="iten-menu" href="#" id="iten-menuhtml"><div class="menu-iten">Frameworks</div></a>
+			<a class="iten-menu" href="#" id="iten-menuhtml"><div class="menu-iten">Recursos</div></a>	
+			<a class="iten-menu" href="#" id="iten-menuhtml"><div class="menu-iten">Múltimídia e extras</div></a> 
+			<!--links úteis, pessoas a se acompanhar-->
+			<a class="side-menu-iten" href="#" id="iten-menuhtml"><div>MyBlog</div></a>
+			<a class="side-menu-iten" href="#" id="iten-menuhtml"><div>JD Project</div></a>
+		</header>
+	</div>
+	</div>
 
 
 </body>

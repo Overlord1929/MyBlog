@@ -8,3 +8,135 @@ font-family: 'Russo One', sans-serif;  	estilo da página de html
 font-family: 'Yellowtail', cursive;     estilo do "space" da logo
 */
 
+body{
+	margin: 0;
+	padding: 0;
+	height: 1000px;
+}
+
+h1.logo{
+	font-size: 70px;
+	display: inline-block;
+	margin-left: 100px;	
+}
+
+#logohtml{
+	color: #fff;
+	font-family: 'Russo One', sans-serif;
+	text-shadow: 3px 0px 0px #1D91B8, 
+                 -1px 0px 0px #1D91B8, 
+                 0px 3px 0px #1D91B8, 
+                 0px -1px 0px #1D91B8;
+}
+
+.logo .space{
+	
+	font-size: 55px;
+	display: inline-block;
+	position: absolute;
+	top: 50px;
+	margin-left: -105px;
+	
+}
+
+.side-msg{
+	position: absolute;
+}
+
+#spacehtml{
+	color: #fff;
+	font-family: 'Yellowtail', cursive;
+    text-shadow: 2px 0px 0px  #000, 
+                 -1px 0px 0px #000, 
+                 0px 2px 0px  #000, 
+                 0px -1px 0px #000;
+}
+
+.background-menu{
+	display: block;
+	width: 100%;
+	margin-top: -20px;
+	height: 179px;
+}
+
+#background-menuhtml{
+	background:linear-gradient(to bottom right, #EE5D26, #F38030);	
+}
+
+.menu-container{
+	display: block;
+	width: 100%;
+	height: 75px;
+	border-top: 1px solid rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 2px 0px #1D91B8;
+}
+#menu-containerhtml{
+	background: linear-gradient(to bottom right, #F38030, #EE5D26)
+}
+
+a.iten-menu{
+	text-decoration: none;
+	float: left;
+	font-size: 25px;
+	padding:23px;
+	transition: all 0.3s;
+}
+
+#iten-menuhtml{
+	color: #fff;
+	font-family: 'Russo One', sans-serif;
+
+}
+
+#iten-menuhtml:hover{
+	background:linear-gradient(to bottom right, #B1CA90, #1993BC);
+	transition: all 0.3s;
+	transform: scale(1.1);
+}
+
+a.side-menu-iten{
+	text-decoration: none;
+	float: right;
+	font-size: 25px;
+	padding:23px;	
+	transition: all 0.3s;
+}
+
+/*ROLAGEM DO MENU COM JQUERY*/
+
+
+.menuFixo{
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	transition: all 0.3s;
+}
+
+#minilogo{
+	font-size: 35px;
+	display: inline-block;
+	position: absolute;
+	color: #fff;
+	font-family: 'Russo One', sans-serif;
+	text-shadow: 3px 0px 0px #1D91B8, 
+                 -1px 0px 0px #1D91B8, 
+                 0px 3px 0px #1D91B8, 
+                 0px -1px 0px #1D91B8;
+    margin-left: 770px;
+    margin-top: 16px;
+}
+
+#minilogospan{
+	font-size: 25px;
+	display: inline-block;
+	position: absolute;
+	color: #fff;
+	font-family: 'Yellowtail', cursive;
+    text-shadow: 2px 0px 0px  #000, 
+                 -1px 0px 0px #000, 
+                 0px 2px 0px  #000, 
+                 0px -1px 0px #000;
+    margin-top: 10px;
+    margin-left: -30px;
+}
+
