@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Esta tag é muito importante para SEO</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Descrição que vai aparecer no google, até 150 chars">
+	<link rel="canonical" href="Link único do seu site, impede que o google anexe pagina repetida">
+	<meta name="author" content="Nome do autor do site">
+	<meta name="robots" content="index, nofollow"><!--instrui os robos dos browser ao que fazer com a página-->
+
+    <!-- Google+ / Schema.org --> <!--Ao ser compartilhado no google+ -->
+    <meta itemprop="name" content="Título da página">
+    <meta itemprop="description" content="Descrição da página em menos de 200 caracteres.">
+    <meta itemprop="image" content="https://exemplo.com/imagem.png">
+    <link href="https://plus.google.com/+SuaPagina" rel="publisher">
+    
+    <!-- Open Graph Facebook --> <!--Ao ser compartilhado no facebook  -->
+    <meta property="og:title" content="Título da página">
+    <meta property="og:description" content="Descrição da página em menos de 200 caracteres."/>
+    <meta property="og:url" content="Link da página">
+    <meta property="og:site_name" content="Nome do site"/>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://exemplo.com/imagem.png">
+  
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Título da página">
+    <meta name="twitter:description" content="Descrição da página em menos de 200 caracteres.">
+    <meta name="twitter:url" content="Link da página">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://exemplo.com/imagem.png">
+    <!-- <meta name="twitter:creator" content="@estevanmaito"> -->
+    <meta name="twitter:site" content="@empresa">	
+</head>
+<body>
+
+</body>
+</html>

@@ -12,6 +12,7 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 1000px;
+	background-color: rgba(0,0,0,.2);
 }
 
 h1.logo{
@@ -85,7 +86,11 @@ a.iten-menu{
 #iten-menuhtml{
 	color: #fff;
 	font-family: 'Russo One', sans-serif;
-
+	text-shadow: 3px 0px 0px #1D91B8, 
+                 -1px 0px 0px #1D91B8, 
+                 0px 3px 0px #1D91B8, 
+                 0px -1px 0px #1D91B8;
+            
 }
 
 #iten-menuhtml:hover{
@@ -141,6 +146,108 @@ a.side-menu-iten{
     margin-top: 10px;
     margin-left: -30px;
     transition: all 0.3s;
+}
+
+.marca{
+	display: inline;
+	position: absolute;
+	font-size: 30px;
+	color: #fff;
+	font-family: 'Yellowtail', cursive;
+	text-shadow: 1px 0px 0px #000, 
+                 -1px 0px 0px#000, 
+                 0px 1px 0px #000, 
+                 0px -1px 0px#000;
+    top: 60px;
+    right: 20px;
+}
+
+.sociallogo{
+	display: block;
+	position: absolute;
+}
+
+.face{
+	top: 20px;
+	right: 80px;
+	width: 55px;
+	
+}
+
+.yout{
+	top: -3px;
+	right: 150px;
+	width: 100px;
+
+}
+
+.twit{
+	top:20px;
+	right: 20px;
+	width: 50px;
+}
+
+.main-section{
+	display: block;
+	position: relative;
+	width: 1200px;
+	background-color: #fff;
+	margin: auto;
+	margin-top:75px;
+	border-radius: 5px;
+	z-index: -1;
+	padding: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
+/*font para o titulo dos artigos*/
+@import url('https://fonts.googleapis.com/css?family=Ranga');
+/*font dos artigos*/
+
+.article-box{
+	display: block;
+	border-bottom: 1px dotted #000;
+	padding-bottom: 50px;
+}
+
+.article-title{
+	position: relative;
+	top: 20px;
+	font-size: 35px;
+	font-family: 'Encode Sans Expanded', sans-serif;
+	text-align: center;
+}
+
+.date{
+	font-size: 20px;
+	position: relative;
+	top: -52px;
+}
+
+#welcome-article{
+	text-align: center;
+}
+
+.article{
+	position: relative;
+	font-size: 25px;
+	font-family: 'Ranga', cursive;
+	width: 900px;
+	margin: auto;
+
+}
+
+#color{
+	color: #FF7F50;
+}
+
+.code-frame-block{
+	position: relative;
+	display: block;
+	top: 20px;
+	width: 1000px;
+	height: 500px;
+	margin:auto;
 }
 
 
