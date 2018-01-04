@@ -253,3 +253,92 @@ a.side-menu-iten{
 
 
 
+
+
+
+
+
+
+
+
+
+
+/*------------------ INDEX.HTML DO CSS SPACE---------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+#logocss{
+	font-size: 65px;	
+	color: #fff;
+	font-family: 'Lobster Two', cursive;
+	text-shadow: 3px 0px 0px #1D91B8, 
+                 -1px 0px 0px#1D91B8, 
+                 0px 3px 0px #1D91B8, 
+                 0px -1px 0px#1D91B8;
+}
+
+#spacecss{
+	margin-left: -50px;
+	color: #fff;
+	font-family: 'Yellowtail', cursive;
+    text-shadow: 2px 0px 0px  #000, 
+                 -1px 0px 0px #000, 
+                 0px 2px 0px  #000, 
+                 0px -1px 0px #000;
+}
+
+#background-menucss{
+   background:linear-gradient(to bottom right, #1cbc64, #4ebc1c);
+}
+
+#menu-containercss{
+	background:linear-gradient(to bottom right, #4ebc1c, #1cbc64);
+}
+
+#iten-menuhtml{
+	color: #fff;
+	font-family: 'Russo One', sans-serif;
+	text-shadow: 3px 0px 0px #1D91B8, 
+                 -1px 0px 0px #1D91B8, 
+                 0px 3px 0px #1D91B8, 
+                 0px -1px 0px #1D91B8;
+            
+}
+
+#iten-menuhtml:hover{
+	background:linear-gradient(to bottom right, #B1CA90, #1993BC);
+	transition: all 0.3s;
+	transform: scale(1.1);
+}
+
+
+#minilogo{
+	font-size: 35px;
+	display: inline-block;
+	position: absolute;
+	color: #fff;
+	font-family: 'Russo One', sans-serif;
+	text-shadow: 3px 0px 0px #1D91B8, 
+                 -1px 0px 0px #1D91B8, 
+                 0px 3px 0px #1D91B8, 
+                 0px -1px 0px #1D91B8;
+    margin-left: 770px;
+    margin-top: 16px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+#minilogospan{
+	font-size: 25px;
+	display: inline-block;
+	position: absolute;
+	color: #fff;
+	font-family: 'Yellowtail', cursive;
+    text-shadow: 2px 0px 0px  #000, 
+                 -1px 0px 0px #000, 
+                 0px 2px 0px  #000, 
+                 0px -1px 0px #000;
+    margin-top: 10px;
+    margin-left: -30px;
+    transition: all 0.3s;
+}
