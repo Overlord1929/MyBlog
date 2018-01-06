@@ -397,6 +397,10 @@ a.side-menu-iten{
 }
 
 
+
+/*------------------WEB BLOCK---------------------	*/
+
+
 .web-block{
 	position: fixed;
 	bottom: 10px;
@@ -410,14 +414,14 @@ a.side-menu-iten{
 }
 
 a.web-link{
+	position: relative;
 	text-decoration: none;
 	list-style: none;
 	font-size: 25px;
 	padding: 10px;
-	margin-left: 60px;
 	margin-top: 0px;
 	display: inline-block;
-
+	transition: all .3s;
 }
 
 .web-link:hover{
@@ -445,7 +449,7 @@ a.web-link{
                  -1px 0px 0px#2A8400, 
                  0px 3px 0px #2A8400, 
                  0px -1px 0px#2A8400;
-                 margin-left: 63px;
+    margin-left: 60px;
 }
 
 .php-link{
@@ -460,3 +464,28 @@ a.web-link{
 	margin-left: 59px;
 	margin-top: -5px;
 }
+
+.js-link{
+	color: #fff;
+	font-family: 'Lobster Two', cursive;
+	text-shadow: 3px 0px 0px #000, 
+                 -1px 0px 0px#000, 
+                 0px 3px 0px #000, 
+                 0px -1px 0px#000;
+    margin-left: 30px;
+}
+
+
+.web-icon{
+	position: fixed;
+	color: #000;
+	left: 10px;
+	background-color: #fff;
+	bottom: 175px;
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 7px;
+}
+
+
+
