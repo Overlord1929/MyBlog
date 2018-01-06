@@ -403,7 +403,8 @@ a.side-menu-iten{
 	left: 10px;
 	width: 200px;
 	height: 160px;
-	background:linear-gradient(to bottom right, #f1fc1b, #fffc6d);
+	background-color: #fff;
+	border: 1px solid #000;
 	box-shadow: 2px 2px 2px 0px #000;
 	border-radius: 5px;
 }
@@ -411,7 +412,6 @@ a.side-menu-iten{
 a.web-link{
 	text-decoration: none;
 	list-style: none;
-	color: #000;
 	font-size: 25px;
 	padding: 10px;
 	margin-left: 60px;
@@ -424,7 +424,7 @@ a.web-link{
 	transform: scale(1.3);
 }
 
-#html-link{
+.html-link{
 	color: #fff;
 	font-size: 27px;
 	font-family: 'Russo One', sans-serif;
@@ -437,7 +437,7 @@ a.web-link{
 
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
-#css-link{
+.css-link{
 	font-size: 27px;
 	color: #fff;
 	font-family: 'Lobster Two', cursive;
@@ -448,7 +448,7 @@ a.web-link{
                  margin-left: 63px;
 }
 
-#php-link{
+.php-link{
 	font-size: 30px;
 	color: #fff;
 	font-family: 'Lobster Two', cursive;
