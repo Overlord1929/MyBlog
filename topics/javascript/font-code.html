@@ -4,6 +4,7 @@
 	<title>Código Fonte - MyBlog</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="iframes/iframe-style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="../jquery.js"></script>
 	<script type="text/javascript" src="../script.js"></script>
@@ -57,7 +58,8 @@
 	<section class="main-section">
 		<br/><br/>
 
-		<div class="article-box" id="metatag">
+		<div class="article-box">
+
 			<header class="article-header">
 				<h3 class="article-title" id="article-metatag">Controlando vídeos com javascript</h3>
 				<p class="date">10/01/2018</p>
@@ -66,20 +68,79 @@
 				Neste artigo explicarei como controlar videos (criando controles) usando funções javascript! Primeiro vamos adicionar nosso vídeo:
 			</p>
 
-			<video class="video-block" width="600">
+			<video id="videoId" class="video-block" width="600">
 				<source src="videos/TWICE _Heart Shaker_ M_V.mp4" type="video/mp4">
 				<source src="videos/TWICE _Heart Shaker_ M_V.ogv" type="video/ogv">
 				<source src="videos/TWICE _Heart Shaker_ M_V.webm" type="video/webm">
 			</video>
 
-			<div class="video-button">Play</div>
-			<div class="video-button">Pause</div>
+			<div class="video-button" onclick="goPlay()">Play</div>
+			<div class="video-button" onclick="goPause()">Pause</div>
 				<div class="spacing">
-				<div class="video-button" id="big">Bigger</div>
-				<div class="video-button">Normal</div>
-				<div class="video-button">Smaller</div>
+				<div class="video-button" onclick="makeBigger()" id="big">Bigger</div>
+				<div class="video-button" onclick="makeNormal()">Normal</div>
+				<div class="video-button" onclick="makeSmaller()">Smaller</div>
 			</div>
+
+			<script type="text/javascript">
+				var myVideo = document.getElementById("videoId");
+
+				function goPlay(){
+					if(myVideo.paused){
+						myVideo.play();
+					}
+				}
+
+				function goPause(){
+					if (myVideo.play){
+						myVideo.pause();
+					}
+				}
+
+				function makeBigger(){
+					myVideo.width=720;
+				}
+				function makeNormal(){
+					myVideo.width=600;
+				}
+				function makeSmaller(){
+					myVideo.width=480;
+				}
+			</script>
+			<br>
+			<p class="article"><br>Para isso, utilizamos a tag <<span class="tag">video</span>> com a subtag <<span class="tag">source</span>>:
+			</p>
+
+			<br><br>
+			<div class="code-div">
+				<<span class="tag">video</span> id="myVideo"><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;<<span class="tag">source</span> src="" type=""><br>
+				< /<span class="tag">video</span>>
+			</div><br><br>
+
+			<p class="article">A seguir cria-se os botões que receberão as funções de controle do vídeo.</p>
+			<br>
+			<div class="code-div">
+				<<span class="tag" onclick="goPlay()">button</span> class="video-button">Play<<span class="tag">/button</span>><br>
+				<<span class="tag" onclick="goPause()">button</span> class="video-button">Pause<<span class="tag">/button</span>><br>
+				<<span class="tag" onclick="goBigger()">button</span> class="video-button">Bigger<<span class="tag">/button</span>><br>
+				<<span class="tag" onclick="goNormal()">button</span> class="video-button">Normal<<span class="tag">/button</span>><br>
+				<<span class="tag" onclick="goSmaller()">button</span> class="video-button">Smaller<<span class="tag">/button</span>><br><br>
+			</div>
+
+			<p class="article">Utiliza-se o atributo onclick de cada botão que vai acionar a função específica dele...</p><br>
 			
+			<iframe src="iframes/jscode.html" class="jscode-iframe"></iframe>
+		</div>
+
+		<div class="article-box">
+			<header class="article-header">
+				<h3 class="article-title" id="article-metatag">Validação de formulário com JS - Parte 1</h3>
+				<p class="date">11/01/2018</p>
+			</header>
+			<p class="article">Primeiro vamos desenvolver o formulário:</p><br><br>
+
+			<iframe class="jscode-iframe" src="iframes/formulary-validation.html"></iframe>
 		</div>
 	</section>
 

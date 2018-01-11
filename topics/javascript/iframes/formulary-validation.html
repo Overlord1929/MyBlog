@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function validation(){
+			if(document.formulario.nNome.value == ""){
+				alert("Preencha o proprio nome!");
+				document.formulario.nNome.focus();
+				return false;
+			}
+		}
+	</script>
+	
+	<form action="#" method="post" name="formulario" onsubmit="return validation()">
+		Nome: <input type="text" name="nNome"><br>
+		Sobrenome: <input type="text" name="nSobrenome"><br>
+		Data <input type="date" name="nData"><br>
+		e-mail: <input type="email" name="nEmail"><br>
+		Senha: <input type="password" name="nSenha"><br>
+		<input type="submit" name="nSubmit">
+	</form>
+</body>
+</html>

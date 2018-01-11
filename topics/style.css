@@ -652,3 +652,22 @@ a.web-link{
 	margin-left: 360px;
 }
 
+/*-------CODIFICAÇÃO DO CÓDIGO EXPLICATIVO---------*/
+
+.tag{
+
+	color: #f44262;
+}
+
+.code-div{
+	font-size: 18px;
+	display: block;
+	margin-left: 200px;
+	text-align: justify;
+}
+
+code{
+	font-size: 18px;
+	display: block;
+	margin-left: 200px;
+}
