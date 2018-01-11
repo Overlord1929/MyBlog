@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>HTML - MyBlog</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript" src="../script.js"></script>
+</head>
+<body onload="alert(document.getElementById('webBlock'););">
+
+	<script type="text/javascript">
+		$(function(){   
+			var nav = $('#menu-containerhtml');  
+			var minilogo = $('#minilogo'); 
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 179) { 
+					nav.addClass("menuFixo"); 
+					minilogo.animate({'opacity':'1'},25);
+				} else { 
+					nav.removeClass("menuFixo");
+					minilogo.animate({'opacity':'0'},25);
+				} 
+			});  
+		});
+
+		
+	</script>
+
+	<div class="background-menu" id="background-menuhtml">
+	<h1 class="logo" id="logohtml" onclick="window.location.href='index.html'">HTML&nbsp;<span class="space" id="spacehtml">space</span></h1>
+	<p class="side-msg"></p>
+	<p class="marca">~ ~ Estrutura semântica da web.</p>
+	<a href="#"><img src="../../images/miniface.png" class="sociallogo face"></a>
+	<a href="#"><img src="../../images/miniyout.png" class="sociallogo yout"></a>
+	<a href="#"><img src="../../images/minitwit.png" class="sociallogo twit"></a>
+
+	<div class="menu-container" id="menu-containerhtml">
+		<header class="header-menu">
+			<p id="minilogo">html<span id="minilogospan">space</span></p>
+			
+			<a class="iten-menu" href="#" id="iten-menuhtml"><div>Frameworks</div></a>
+			<a class="iten-menu" href="#" id="iten-menuhtml"><div>Recursos</div></a>	
+			<a class="iten-menu" href="multimedia.html" id="iten-menuhtml"><div>Múltimídia e extras</div></a> 
+			<!--links úteis, pessoas a se acompanhar-->
+			<a class="side-menu-iten" href="C:\Users\Guilherme\Documents\Web\MyBlog\MyBlog\index.html" id="iten-menuhtml"><div>MyBlog</div></a>
+			<a class="side-menu-iten" href="C:\Users\Guilherme\Documents\Web\Jennifer Dewalt's Project\day01\Homepage.html" id="iten-menuhtml"><div>JD Project</div></a>
+		</header>
+	</div>
+	</div>
+
+
+	<a href="javascript:void(0)"><i class="fa fa-exchange web-icon" style="font-size: 25px;" onclick="changePosition()"></i></a>
+	<div class="web-block" id="wb">
+		<a href="../css/index.html" class="web-link css-link">CSS</a><br/>
+		<a href="../javascript/index.html" class="web-link js-link">Javascript</a><br/>
+		<a href="../php/index.html" class="web-link php-link">PHP</a>
+		</ul>
+	</div>
+
+	<div class="main-section">
+	<section>
+
+		<div class="article-box">
+			<header class="article-header">
+				<h3 class="article-title" id="">Apresentação</h3>
+				<p class="date">03/01/2018</p>
+			</header>
+			<p class="article" id="welcome-article">Primeiro de tudo seja bem vindo! É nesta página onde a magia acontece, aqui eu vou postar artigos que vão auxiliar no entendimento do vasto mar que é a Web e a profissão de Web Developer. Claro que não sou nem mesmo um aspirante, mas este site é um dos primeiros passos para o sonho! ;D</p>
+		</div>
+	
+	</section>
+	</div>
+	<footer class="footer">
+		<div class="footer-button previous-button" onclick="window.location.href='index.html'">PREVIOUS</div>
+		<div class="footer-button next-button" onclick="window.location.href='index-page2.html'">NEXT</div>
+	</footer>	
+	
+
+</body>
+</html>

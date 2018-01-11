@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>PHP - MyBlog</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript" src="../script.js"></script>
+</head>
+<body>
+
+	<script type="text/javascript">
+		$(function(){   
+			var nav = $('#menu-containerphp');  
+			var minilogo = $('#minilogophp'); 
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 179) { 
+					nav.addClass("menuFixo"); 
+					minilogo.animate({'opacity':'1'},25);
+				} else { 
+					nav.removeClass("menuFixo");
+					minilogo.animate({'opacity':'0'},25);
+				} 
+			});  
+		});
+	</script>
+
+	<div class="background-menu" id="background-menuphp">
+	<h1 class="logo" id="logophp" onclick="window.location.href='index.html'">PHP&nbsp;<span class="space" id="spacephp">space</span></h1>
+	<p class="side-msg"></p>
+	<p class="marca">~ ~ Poderosa e dinâmica ferramenta pra o Web Dev</p>
+	<a href="#"><img src="../../images/miniface.png" class="sociallogo face"></a>
+	<a href="#"><img src="../../images/miniyout.png" class="sociallogo yout"></a>
+	<a href="#"><img src="../../images/minitwit.png" class="sociallogo twit"></a>
+
+	<div class="menu-container" id="menu-containerphp">
+		<header class="header-menu">
+			<p id="minilogophp">PHP<span id="minilogospan">space</span></p>
+			
+			<a class="iten-menu" href="#" id="iten-menuphp"><div>Frameworks</div></a>
+			<a class="iten-menu" href="#" id="iten-menuphp"><div>Recursos</div></a>	
+			<a class="iten-menu" href="multimedia.html" id="iten-menuphp"><div>Múltimídia e extras</div></a> 
+			<!--links úteis, pessoas a se acompanhar-->
+			<a class="side-menu-iten" href="C:\Users\Guilherme\Documents\Web\MyBlog\MyBlog\index.html" id="iten-menuphp"><div>MyBlog</div></a>
+			<a class="side-menu-iten" href="C:\Users\Guilherme\Documents\Web\Jennifer Dewalt's Project\day01\Homepage.html" id="iten-menuphp"><div>JD Project</div></a>
+		</header>
+	</div>
+	</div>
+
+	<a href="javascript:void(0)"><i class="fa fa-exchange web-icon" style="font-size: 25px;" onclick="changePosition()"></i></a>
+	<div class="web-block" id="wb">
+		<a href="../html/index.html" class="web-link html-link">HTML</a><br/>
+		<a href="../css/index.html" class="web-link css-link">CSS</a><br/>
+		<a href="../php/index.html" class="web-link js-link">javascript</a>
+	</div>
+
+	<section class="main-section">
+		<br/><br/>
+		<div class="article-box" id="metatag">
+			<header class="article-header">
+				<h3 class="article-title" id="article-metatag"></h3>
+				<p class="date">06/01/2018</p>
+			</header>
+
+			<p class="article"><br/><br/>
+
+			</p>
+		</div>
+	</section>
+
+	
+
+</body>
+</html>

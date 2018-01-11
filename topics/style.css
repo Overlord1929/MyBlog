@@ -16,6 +16,7 @@ body{
 }
 
 h1.logo{
+	cursor: pointer;
 	font-size: 70px;
 	display: inline-block;
 	margin-left: 100px;	
@@ -65,11 +66,13 @@ h1.logo{
 }
 
 .menu-container{
+	position: relative;
 	display: block;
 	width: 100%;
 	height: 75px;
 	border-top: 1px solid rgba(0,0,0,0.2);
 	box-shadow: 2px 2px 2px 0px #1D91B8;
+	z-index: 1;
 }
 #menu-containerhtml{
 	background: linear-gradient(to bottom right, #F38030, #EE5D26)
@@ -195,13 +198,12 @@ a.side-menu-iten{
 	margin: auto;
 	margin-top:75px;
 	border-radius: 5px;
-	z-index: -1;
 	padding: 20px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
 /*font para o titulo dos artigos*/
-@import url('https://fonts.googleapis.com/css?family=Ranga');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
 /*font dos artigos*/
 
 .article-box{
@@ -230,11 +232,22 @@ a.side-menu-iten{
 
 .article{
 	position: relative;
-	font-size: 25px;
-	font-family: 'Ranga', cursive;
+	font-size: 22px;
+	font-family: 'Archivo Narrow', sans-serif;
 	width: 900px;
 	margin: auto;
+}
 
+.article-link{
+	display: inline-block;
+	margin-top:5px;
+	text-decoration: none;
+}
+.article-link:visited{
+	color: #EE5D26;
+}
+.article-link:hover{
+	color: #009;
 }
 
 #color{
@@ -397,6 +410,72 @@ a.side-menu-iten{
 }
 
 
+/*-------------INDEX DO PHP-------------------------*/
+
+#logophp{
+	font-size: 65px;	
+	color: #fff;
+	font-family: 'Lobster Two', cursive;
+	text-shadow: 3px 0px 0px #000, 
+                 -1px 0px 0px#000, 
+                 0px 3px 0px #000, 
+                 0px -1px 0px#000;
+}
+
+#spacephp{
+	font-size: 60px;
+	margin-left: -80px;
+	top: 55px;
+	color: #fff;
+	font-family: 'Yellowtail', cursive;
+    text-shadow: 2px 0px 0px  #000, 
+                 -1px 0px 0px #000, 
+                 0px 2px 0px  #000, 
+                 0px -1px 0px #000;
+}
+
+#background-menuphp{
+   background:linear-gradient(to bottom right, #953fff, #9947ff);
+}
+
+#menu-containerphp{
+	background:linear-gradient(to bottom right, #913aff, #8c30ff);
+	box-shadow: 2px 2px 2px 0px #000;
+}
+
+#iten-menuphp{
+	color: #fff;
+	font-family: 'Russo One', sans-serif;
+	text-shadow: 1px 0px 0px #000, 
+                 -.5px 0px 0px#000, 
+                 0px 2px 0px #000, 
+                 0px -.5px 0px#000;
+            
+}
+
+#iten-menuphp:hover{
+	background:linear-gradient(#4B5053, #2A2B2D);
+	transition: all 0.3s;
+	transform: scale(1.1);
+}
+
+#minilogophp{
+	font-size: 30px;
+	display: inline-block;
+	position: absolute;
+	color: #fff;
+	font-family: 'Russo One', sans-serif;
+	text-shadow: 3px 0px 0px #1D91B8, 
+                 -1px 0px 0px #1D91B8, 
+                 0px 3px 0px #1D91B8, 
+                 0px -1px 0px #1D91B8;
+    margin-left: 740px;
+    margin-top: 20px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+
 
 /*------------------WEB BLOCK---------------------	*/
 
@@ -411,21 +490,25 @@ a.side-menu-iten{
 	border: 1px solid #000;
 	box-shadow: 2px 2px 2px 0px #000;
 	border-radius: 5px;
+	visibility: hidden;
+	z-index: 1;
 }
 
 a.web-link{
-	position: relative;
-	text-decoration: none;
 	list-style: none;
 	font-size: 25px;
 	padding: 10px;
 	margin-top: 0px;
 	display: inline-block;
-	transition: all .3s;
 }
 
 .web-link:hover{
+	transition: all .3s;
 	transform: scale(1.3);
+}
+
+.web-link-button{
+	z-index: 1;
 }
 
 .html-link{
@@ -487,5 +570,85 @@ a.web-link{
 	border-radius: 7px;
 }
 
+.h3-title{
+	font-size: 28px;
+}
 
+#icons-iframe{
+	position: relative;
+	display: block;
+	top: 20px;
+	width: 800px;
+	margin: auto;
+}
+
+
+.footer{
+	position: relative;
+	height: 0px;
+}
+
+.footer-button{
+	cursor: pointer;
+	bottom: 20px;
+	color: #fff;
+	background-color: #EE5D26;
+	padding: 10px;	
+	border: 1px solid #fff;
+	border-radius: 5px;
+	text-align: center;
+	user-select: none;
+	box-shadow: -.5px 1px 1px 1px #1D91B8;	
+}
+
+.footer-button:active{
+	box-shadow: none;
+}
+
+.next-button{
+	position: absolute;
+	right: 20px;
+	width: 70px;
+}
+.previous-button{
+	position: absolute;
+	left: 20px;
+	width: 70px;
+}
+.previous-button{
+	width: 75px;
+}
+
+
+/*----------------VIDEO STYLING-----------------------*/
+.video-block{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.video-button{
+	position: relative;
+	float: left;
+	bottom: 37px;
+	left: 300px;
+	z-index: -2;
+	padding: 5px;
+	background-color: #fff;
+	border: 2px solid #EE5D26;
+	width: 58px;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	z-index: 1;
+	margin: 4px;
+}
+
+.video-button:active{
+	transform: scale(1.1);
+}
+
+.spacing{
+	margin-left: 360px;
+}
 

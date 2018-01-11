@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="../jquery.js"></script>
 	<script type="text/javascript" src="../script.js"></script>
 </head>
-<body>
+<body onload="alert(document.getElementById('webBlock'););">
 
 	<script type="text/javascript">
 		$(function(){   
@@ -24,10 +24,12 @@
 				} 
 			});  
 		});
+
+		
 	</script>
 
 	<div class="background-menu" id="background-menuhtml">
-	<h1 class="logo" id="logohtml">HTML&nbsp;<span class="space" id="spacehtml">space</span></h1>
+	<h1 class="logo" id="logohtml" onclick="window.location.href='index.html'">HTML&nbsp;<span class="space" id="spacehtml">space</span></h1>
 	<p class="side-msg"></p>
 	<p class="marca">~ ~ Estrutura semântica da web.</p>
 	<a href="#"><img src="../../images/miniface.png" class="sociallogo face"></a>
@@ -50,14 +52,15 @@
 
 
 	<a href="javascript:void(0)"><i class="fa fa-exchange web-icon" style="font-size: 25px;" onclick="changePosition()"></i></a>
-	<div class="web-block">
+	<div class="web-block" id="wb">
 		<a href="../css/index.html" class="web-link css-link">CSS</a><br/>
 		<a href="../javascript/index.html" class="web-link js-link">Javascript</a><br/>
 		<a href="../php/index.html" class="web-link php-link">PHP</a>
 		</ul>
 	</div>
 
-	<section class="main-section">
+	<div class="main-section">
+	<section>
 
 		<div class="article-box">
 			<header class="article-header">
@@ -93,11 +96,58 @@
 		<div class="article-box">
 			<header class="article-header">
 				<h3 class="article-title" id="">Biblioteca de ícones</h3>
-				<p class="date">06/01/2018</p>
+				<p class="date">08/01/2018</p>
 			</header>
-			<p class="article" id="welcome-article">Hoje vou apresentar uma biblioteca de ícones muito variável e extensa que inclui itens como logo do facebook, da nuvem , para músicas e muito, muito mais...</p>
+			<p class="article">Hoje vou apresentar uma biblioteca de ícones muito variável e extensa que inclui itens como logo do facebook, da nuvem , para músicas e muito, muito mais...</p><br>
+			<h3 style="text-align: center;" class="h3-title">Vamos começar ;D</h4><br/>
+			<p class="article">Existem três principais bibliotecas muito extensas com uma vasta gama de opções de ícones, são elas: <br>
+			<a class="article-link" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">Font Awesome Icons</a><br>
+			<a class="article-link" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">Bootstrap Icons</a><br>
+			<a class="article-link" href="https://fonts.googleapis.com/icon?family=Material+Icons">Google Icons</a><br><br>
+			Geralmente utilizamos as tags '< i >' e '< span >' para inserir o cógido do ícone, que vem em uma classe ou um código HEX. Aqui alguns exemplos de ícones famosos e muito úteis.
+			<iframe src="icons.txt" id="icons-iframe"></iframe><br><br>
+			<i class="fa fa-amazon"></i>
+			<i class="fa fa-android"></i>
+			<i class="fa fa-apple"></i>
+			<i class="fa fa-cc-visa"></i>
+			<i class="fa fa-chrome"></i>
+			<i class="fa fa-css3"></i>
+			<i class="fa fa-facebook-official"></i>
+			<i class="fa fa-git"></i>
+			<i class="fa fa-github"></i>
+			<i class="fa fa-google-plus"></i>
+			<i class="fa fa-html5"></i>
+			<i class="fa fa-internet-explorer"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+			<i class="fa fa-opera"></i>
+			<i class="fa fa-pinterest"></i>
+			<i class="fa fa-share-alt"></i>
+			<i class="fa fa-snapchat-square"></i>
+			<i class="fa fa-skype"></i>
+			<i class="fa fa-spotify"></i>
+			<i class="fa fa-tumblr-square"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-usb"></i>
+			<i class="fa fa-vimeo"></i>
+			<i class="fa fa-wikipedia-w"></i>
+			<i class="fa fa-windows"></i>
+			<i class="fa fa-youtube-play"></i>
+			<i class="fa fa-youtube-square"></i>
+			<i class="fa fa-steam-square"></i>
+			<i class="fa fa-themeisle"></i>
+			<i class="fa fa-reddit-alien"></i>
+			<i class="fa fa-paypal"></i>
+			<br><br>
+			Uma das grandes vantagens de se usar ícones é que eles são totalmente personalizáveis como texto, ou seja, você pode mudar a cor, adicionar sombra, estilo itálico e tamanho, sabendo trabalhar com o recurso pode-se conseguir uma exelente ferramenta.
+			</p>
 		</div>
-	</section>	
+	</section>
+
+	<footer class="footer">
+		<div class="footer-button next-button" onclick="window.location.href='index-page2.html'">NEXT</div>
+	</footer>	
+	</div>
 
 </body>
 </html>

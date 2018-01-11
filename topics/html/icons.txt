@@ -1,0 +1,41 @@
+CÓDIGO NECESSÁRIO PARA A FONTS AWESOME ICONS
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+CÓDIGO PARA BOOTSTRAP
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+PARA GOOGLE
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<i class="fa fa-amazon"></i>
+			<i class="fa fa-android"></i>
+			<i class="fa fa-apple"></i>
+			<i class="fa fa-cc-visa"></i>
+			<i class="fa fa-chrome"></i>
+			<i class="fa fa-css3"></i>
+			<i class="fa fa-facebook-official"></i>
+			<i class="fa fa-git"></i>
+			<i class="fa fa-github"></i>
+			<i class="fa fa-google-plus"></i>
+			<i class="fa fa-html5"></i>
+			<i class="fa fa-internet-explorer"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+			<i class="fa fa-opera"></i>
+			<i class="fa fa-pinterest"></i>
+			<i class="fa fa-share-alt"></i>
+			<i class="fa fa-snapchat-square"></i>
+			<i class="fa fa-skype"></i>
+			<i class="fa fa-spotify"></i>
+			<i class="fa fa-tumblr-square"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-usb"></i>
+			<i class="fa fa-vimeo"></i>
+			<i class="fa fa-wikipedia-w"></i>
+			<i class="fa fa-windows"></i>
+			<i class="fa fa-youtube-play"></i>
+			<i class="fa fa-youtube-square"></i>
+			<i class="fa fa-steam-square"></i>
+			<i class="fa fa-themeisle"></i>
+			<i class="fa fa-reddit-alien"></i>
+			<i class="fa fa-paypal"></i>
